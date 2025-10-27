@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        // Versão do TypeScript
+        "target": "es6",
+        // Diretorio de saida
+        "outDir": "js",
+        // Não vai gerar um arquivo se tiver erro no código
+        "noEmitOnError": true,
+    },
+    "include": [
+        // Coloca aqui o caminho para executar o TypeScript em pasta ou subpasta
+        "ts/**/*"
+    ]
+}
