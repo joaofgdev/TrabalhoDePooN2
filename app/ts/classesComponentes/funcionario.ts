@@ -1,4 +1,4 @@
-import { Usuario } from "./usuario";
+import { Usuario } from "./usuario.js";
 
 export class Funcionario extends Usuario {
     private cargo: string;

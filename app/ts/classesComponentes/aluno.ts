@@ -1,4 +1,4 @@
-import { Usuario } from "./usuario";
+import { Usuario } from "./usuario.js";
 
 export class Aluno extends Usuario { // Extende a classe Usuario para herdar suas propriedades e métodos
     private matricula: string;

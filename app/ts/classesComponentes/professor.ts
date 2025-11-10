@@ -1,4 +1,4 @@
-import { Usuario } from "./usuario";
+import { Usuario } from "./usuario.js";
 
 export class Professor extends Usuario {
     private disciplina: string;

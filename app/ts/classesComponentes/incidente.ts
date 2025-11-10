@@ -1,5 +1,5 @@
-import { Livro } from "./livro";
-import { Usuario } from "./usuario";
+import { Livro } from "./livro.js";
+import { Usuario } from "./usuario.js";
 
 export class Incidente {
     private usuario: Usuario;

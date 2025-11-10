@@ -45,4 +45,8 @@ export class Livro {
             console.log("Livro indisponível para empréstimo.");
         }
     }
+    devolver() {
+        this.quantidadeDisponivel++;
+        console.log("Livro devolvido com sucesso.");
+    }
 }

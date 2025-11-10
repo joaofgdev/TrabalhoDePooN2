@@ -1,14 +1,16 @@
 {
-    "compilerOptions": {
-        // Versão do TypeScript
-        "target": "es6",
-        // Diretorio de saida
-        "outDir": "js",
-        // Não vai gerar um arquivo se tiver erro no código
-        "noEmitOnError": true,
-    },
-    "include": [
-        // Coloca aqui o caminho para executar o TypeScript em pasta ou subpasta
-        "ts/**/*"
-    ]
+  "compilerOptions": {
+    /* ----- O Essencial para o Node.js Moderno ----- */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020", // Mais moderno que es6
+
+    /* ----- O que você já tinha (e está certo) ----- */
+    "outDir": "js",
+    "noEmitOnError": true
+  },
+  "include": [
+    // Isso já estava certo
+    "ts/**/*"
+  ]
 }

@@ -1,7 +1,7 @@
-import { Livro } from "./livro";
-import { Usuario } from "./usuario";
-import { Emprestimo } from "./emprestimo";
-import { Reserva } from "./reserva";
+import { Livro } from "./livro.js";
+import { Usuario } from "./usuario.js";
+import { Emprestimo } from "./emprestimo.js";
+import { Reserva } from "./reserva.js";
 
 export class Biblioteca {
     private livros: Livro[] = [];

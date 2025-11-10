@@ -1,5 +1,5 @@
-import { Livro } from "./livro";
-import { Usuario } from "./usuario";
+import {Livro }  from "./livro.js";
+import  {Usuario}  from "./usuario.js";
 
 export class Reserva {
     private usuario: Usuario;
@@ -36,7 +36,6 @@ export class Reserva {
     }
 
     disponivelParaEmprestimo(): boolean {
-        // O livro precisa estar disponível e a reserva ainda ativa
         return this.livro.getStatus() === "disponivel" && this.ativo;
     }
 }
