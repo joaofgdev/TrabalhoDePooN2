@@ -53,4 +53,22 @@ export class Emprestimo {
     public isDevolvido(): boolean {
         return this.devolvido;
     }
+    public setUsuario(usuario: Usuario): void {
+        this.usuario = usuario;
+    }
+
+    public setLivro(livro: Livro): void {
+        this.livro = livro;
+    }
+    public setDataEmprestimo(data: Date): void {
+        this.dataEmprestimo = data;
+    }
+    public setDataDevolucao(data: Date): void {
+        this.dataDevolucao = data;
+    }
+    public setDevolvido(status: boolean): void {
+        this.devolvido = status;
+    }
+
+
 }

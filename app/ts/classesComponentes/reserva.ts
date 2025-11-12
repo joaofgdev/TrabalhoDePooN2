@@ -26,8 +26,16 @@ export class Reserva {
         return this.dataReserva;
     }
 
-    isAtivo(): boolean {
+    setDataReserva(data: Date): void {
+        this.dataReserva = data;
+    }
+
+    getisAtivo(): boolean {
         return this.ativo;
+    }
+
+    setAtivo(ativo: boolean): void {
+        this.ativo = ativo;
     }
 
     cancelarReserva(): void {
