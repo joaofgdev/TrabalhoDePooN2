@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    /* ----- O Essencial para o Node.js Moderno ----- */
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2020", // Mais moderno que es6
+    /* ----- Configuração para Navegador (Browser) ----- */
+    "target": "ES2020",          // JavaScript moderno
+    "module": "ES2020",          // <--- O PULO DO GATO: Gera "import/export" nativo do navegador
+    "moduleResolution": "node",  // Ajuda a resolver os caminhos
+    "lib": ["ES2020", "DOM"],    // <--- IMPORTANTE: Permite usar document, alert, localStorage
 
-    /* ----- O que você já tinha (e está certo) ----- */
-    "outDir": "js",
+    /* ----- Saída ----- */
+    "outDir": "./js",            // Seus arquivos JS vão para a pasta 'js'
     "noEmitOnError": true
   },
   "include": [
-    // Isso já estava certo
     "ts/**/*"
   ]
 }

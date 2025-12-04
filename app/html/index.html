@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Afya - Pato Branco</title>
+</head>
+<body>
+
+    <h1>Sistema de Biblioteca</h1>
+
+    <h3>Cadastrar Livro</h3>
+    <label>Título:</label> <input type="text" id="tituloLivro"><br>
+    <label>Autor:</label> <input type="text" id="autorLivro"><br>
+    <label>ISBN:</label> <input type="text" id="isbnLivro"><br>
+    <label>Qtd:</label> <input type="number" id="qtdLivro" value="1"><br>
+    <button id="btnCadastrarLivro">Salvar Livro</button>
+    <hr>
+
+    <h3>Cadastrar Usuário</h3>
+    <label>Tipo:</label>
+    <select id="tipoUsuario">
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+        <option value="funcionario">Funcionário</option>
+    </select><br>
+    <label>Nome:</label> <input type="text" id="nomeUsuario"><br>
+    <label>Email:</label> <input type="email" id="emailUsuario"><br>
+    <label>Extra (Matrícula/Disciplina/Cargo):</label> <input type="text" id="extraUsuario"><br>
+    <button id="btnCadastrarUsuario">Salvar Usuário</button>
+    <hr>
+
+    <h3>Realizar Empréstimo</h3>
+    <label>Usuário:</label> <select id="selUsuario"></select><br>
+    <label>Livro:</label> <select id="selLivro"></select><br>
+    <button id="btnEmprestar">Confirmar Empréstimo</button>
+    <hr>
+
+    <h3>Livros Disponíveis</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>ISBN</th>
+                <th>Qtd</th>
+                <th>Ação</th> </tr>
+        </thead>
+        <tbody id="tabelaLivros"></tbody>
+    </table>
+
+    <h3>Usuários Cadastrados</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Grupo</th>
+                <th>Ação</th> </tr>
+        </thead>
+        <tbody id="tabelaUsuarios"></tbody>
+    </table>
+
+    <h3>Empréstimos Ativos</h3>
+    <table border="1">
+        <thead><tr><th>Livro</th><th>Usuário</th><th>Devolução</th><th>Ação</th></tr></thead>
+        <tbody id="tabelaEmprestimos"></tbody>
+    </table>
+
+    <script type="module" src="../js/app.js"></script>
+
+</body>
+</html>

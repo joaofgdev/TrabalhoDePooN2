@@ -14,15 +14,20 @@ export class Reserva {
     getDataReserva() {
         return this.dataReserva;
     }
-    isAtivo() {
+    setDataReserva(data) {
+        this.dataReserva = data;
+    }
+    getisAtivo() {
         return this.ativo;
+    }
+    setAtivo(ativo) {
+        this.ativo = ativo;
     }
     cancelarReserva() {
         this.ativo = false;
         console.log(`A reserva do livro "${this.livro.getTitulo()}" foi cancelada.`);
     }
     disponivelParaEmprestimo() {
-        // O livro precisa estar disponível e a reserva ainda ativa
         return this.livro.getStatus() === "disponivel" && this.ativo;
     }
 }

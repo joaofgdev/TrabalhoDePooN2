@@ -5,10 +5,8 @@ export class Emprestimo {
         this.dataEmprestimo = new Date();
         this.dataDevolucao = new Date(this.dataEmprestimo.getTime() + 7 * 24 * 60 * 60 * 1000); // +7 dias
         this.devolvido = false;
-        // Marca o livro como indisponível no momento do empréstimo
         this.livro.emprestar();
     }
-    // Método para registrar devolução
     registrarDevolucao() {
         if (this.devolvido) {
             console.log(`O livro "${this.livro.getTitulo()}" já foi devolvido.`);
@@ -18,7 +16,6 @@ export class Emprestimo {
         this.livro.devolver();
         console.log(`A devolução do livro "${this.livro.getTitulo()}" foi registrada com sucesso.`);
     }
-    // Verifica se o empréstimo está atrasado
     atrasado() {
         const hoje = new Date();
         return !this.devolvido && hoje > this.dataDevolucao;
@@ -38,5 +35,20 @@ export class Emprestimo {
     }
     isDevolvido() {
         return this.devolvido;
+    }
+    setUsuario(usuario) {
+        this.usuario = usuario;
+    }
+    setLivro(livro) {
+        this.livro = livro;
+    }
+    setDataEmprestimo(data) {
+        this.dataEmprestimo = data;
+    }
+    setDataDevolucao(data) {
+        this.dataDevolucao = data;
+    }
+    setDevolvido(status) {
+        this.devolvido = status;
     }
 }

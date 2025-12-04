@@ -1,0 +1,117 @@
+{
+  "livros": [
+    {
+      "titulo": "Programação Orientada a Objetos",
+      "autor": "Autor Clássico",
+      "isbn": "123-456",
+      "quantidadeDisponivel": 0,
+      "status": "disponivel"
+    },
+    {
+      "titulo": "Banco de Dados Essencial",
+      "autor": "Maria Autora",
+      "isbn": "789-012",
+      "quantidadeDisponivel": 3,
+      "status": "disponivel"
+    },
+    {
+      "titulo": "Redes de Computadores",
+      "autor": "Carlos Autor",
+      "isbn": "321-654",
+      "quantidadeDisponivel": 2,
+      "status": "disponivel"
+    },
+    {
+      "titulo": "Programação Orientada a Objetos",
+      "autor": "Autor Clássico",
+      "isbn": "123-456",
+      "quantidadeDisponivel": 1,
+      "status": "disponivel"
+    },
+    {
+      "titulo": "Banco de Dados Essencial",
+      "autor": "Maria Autora",
+      "isbn": "789-012",
+      "quantidadeDisponivel": 3,
+      "status": "disponivel"
+    },
+    {
+      "titulo": "Redes de Computadores",
+      "autor": "Carlos Autor",
+      "isbn": "321-654",
+      "quantidadeDisponivel": 2,
+      "status": "disponivel"
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "João Carlos",
+      "email": "joao.aluno@email.com",
+      "senha": "senha123",
+      "grupo": "Graduação"
+    },
+    {
+      "nome": "Ana Professora",
+      "email": "ana.prof@email.com",
+      "senha": "senha456",
+      "grupo": "Docente"
+    },
+    {
+      "nome": "Mario Bibliotecário",
+      "email": "mario.func@email.com",
+      "senha": "senha789",
+      "grupo": "Administrativo"
+    },
+    {
+      "nome": "João Carlos",
+      "email": "joao.aluno@email.com",
+      "senha": "senha123",
+      "grupo": "Graduação",
+      "matricula": "M001"
+    },
+    {
+      "nome": "Ana Professora",
+      "email": "ana.prof@email.com",
+      "senha": "senha456",
+      "grupo": "Docente",
+      "disciplina": "Arquitetura de Software"
+    },
+    {
+      "nome": "Mario Bibliotecário",
+      "email": "mario.func@email.com",
+      "senha": "senha789",
+      "grupo": "Administrativo",
+      "cargo": "Bibliotecário Chefe"
+    }
+  ],
+  "emprestimos": [
+    {
+      "usuarioEmail": "joao.aluno@email.com",
+      "livroIsbn": "123-456",
+      "dataEmprestimo": "2025-11-12T13:11:49.214Z",
+      "dataDevolucao": "2025-11-19T13:11:49.214Z",
+      "devolvido": true
+    },
+    {
+      "usuarioEmail": "joao.aluno@email.com",
+      "livroIsbn": "123-456",
+      "dataEmprestimo": "2025-11-12T13:17:54.204Z",
+      "dataDevolucao": "2025-11-19T13:17:54.204Z",
+      "devolvido": true
+    }
+  ],
+  "reservas": [
+    {
+      "usuarioEmail": "ana.prof@email.com",
+      "livroIsbn": "123-456",
+      "dataReserva": "2025-11-12T13:11:49.310Z",
+      "ativo": true
+    },
+    {
+      "usuarioEmail": "ana.prof@email.com",
+      "livroIsbn": "123-456",
+      "dataReserva": "2025-11-12T13:17:54.219Z",
+      "ativo": true
+    }
+  ]
+}
